@@ -40,6 +40,8 @@ In this repo, I build a basic python package using pip and follow software devel
 * Extra conda tool: conda install conda-verify -n anaconda_package
 * Conda pytest: conda install pytest -n anaconda_package -y
 * Conda ruff: conda install ruff -n anaconda_package -y
+* Conda pre-commit: conda install -c conda-forge pre-commit -n anaconda_package -y
+* Documentation: pip install .[docs]
 * Purge: conda build purge-all
 * Build: conda build conda-recipe
 * Install: conda install --use-local gregs_conda_package -n anaconda_package -y
