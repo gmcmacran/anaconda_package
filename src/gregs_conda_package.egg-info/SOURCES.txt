@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/gregs_conda_package/__init__.py
+src/gregs_conda_package/identity.py
+src/gregs_conda_package.egg-info/PKG-INFO
+src/gregs_conda_package.egg-info/SOURCES.txt
+src/gregs_conda_package.egg-info/dependency_links.txt
+src/gregs_conda_package.egg-info/requires.txt
+src/gregs_conda_package.egg-info/top_level.txt
+test/test_identity.py
