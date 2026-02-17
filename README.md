@@ -1,6 +1,6 @@
 # Overview
 
-In this repo, I build a basic python package using pip and follow software development best practices. 
+In this repo, I build a basic python package using anaconda and follow software development best practices. 
 
 * Code Styling
 * Linting
@@ -12,18 +12,22 @@ In this repo, I build a basic python package using pip and follow software devel
 
 # Helpful Terminal Commands
 
+### Environment setup
 * Conda Environment: conda create -n anaconda_package python=3.13.5 conda-verify pytest ruff pre-commit -y
 * Remove Environment: conda remove -n anaconda_package --all -y
 * Activate Environment conda activate anaconda_package
 * Deactivate Environment conda deactivate
 * Documentation: pip install .[docs]
 
+### Build
 * Purge: conda build purge-all
 * Build: conda build conda-recipe
 
+### Install
 * Install: conda install --use-local gregs_conda_package -n anaconda_package -y
 * Uninstall: conda remove gregs_conda_package -n anaconda_package -y
 
+### Checks
 * Style: ruff format .
 * Lint: ruff check . --fix
 * Pre-commit check: pre-commit run --all-files
