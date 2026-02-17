@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gregs_pip_package"
+version = "0.0.1"
+description = "Building a basic pip module."
+readme = "README.md"
+requires-python = ">=3.13.5"
+license = "MIT"
+authors = [
+    { name = "Greg McMahan", email = "gmcmacran@gmail.com" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.15.1",
+    "pytest>=9.0.2",
+    "pre-commit>=4.5.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.1", 
+    "mkdocstrings[python]>=1.0.3",
+]
+
+docs = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.1",
+    "mkdocstrings[python]>=1.0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/gmcmacran/pip_package"
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4"]
+ignore = []
+
+[tool.ruff.format]
+
+

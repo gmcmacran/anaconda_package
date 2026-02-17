@@ -1,0 +1,11 @@
+site_name: gregs_pip_package
+theme:
+  name: material
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: numpy
+            show_source: true
