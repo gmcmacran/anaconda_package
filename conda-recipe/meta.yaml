@@ -24,6 +24,7 @@ test:
     - test/*
   requires:
     - pytest
+    - ruff
   commands:
     - pytest -v
 
