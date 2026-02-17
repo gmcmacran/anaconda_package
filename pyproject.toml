@@ -30,7 +30,7 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/gmcmacran/anaconda_package/tree/initial_upload"
+Homepage = "https://github.com/gmcmacran/anaconda_package"
 
 [tool.ruff]
 line-length = 88

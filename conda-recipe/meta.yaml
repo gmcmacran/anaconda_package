@@ -11,13 +11,13 @@ build:
 
 requirements:
   host:
-    - python >=3.13
+    - python >=3.13.5
     - pip
     - setuptools
     - wheel
 
   run:
-    - python >=3.13
+    - python >=3.13.5
 
 test:
   source_files:
@@ -30,6 +30,6 @@ test:
 
 
 about:
-  home: "https://github.com/gmcmacran/pip_package"
+  home: "https://github.com/gmcmacran/anaconda_package"
   license: MIT
   summary: "Building a basic conda module."
