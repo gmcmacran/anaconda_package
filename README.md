@@ -10,6 +10,10 @@ In this repo, I build a basic python package using anaconda and follow software 
 * Versioning
 * CI/CD
 
+This repo supports building with anaconda and pip. The typical process is to publish on pypi and then point conda at the pypi page. This package will not be published on pypi so this workflow does not work. 
+
+Instead, this repo supports two independent build processes. Pip & conda. This causes challenges around keeping the toml file in sync with conda's meta.yml. Github actions are used to confirm both build processes work.
+
 # Helpful Terminal Commands
 
 ### Environment setup
@@ -18,10 +22,12 @@ In this repo, I build a basic python package using anaconda and follow software 
 * Activate Environment conda activate anaconda_package
 * Deactivate Environment conda deactivate
 * Documentation: pip install .[docs]
+* Pip build: pip install build
 
 ### Build
 * Purge: conda build purge-all
-* Build: conda build conda-recipe
+* Conda Build: conda build conda-recipe
+* Pip Build: python -m build
 
 ### Install
 * Install: conda install --use-local gregs_conda_package -n anaconda_package -y
@@ -40,5 +46,6 @@ In this repo, I build a basic python package using anaconda and follow software 
 * Ensure code follows lint rules & well formated on PR and merge into main.
 * Confirm package could be published to pypi on PR and merge into main.
 * Run tests on linux, mac, and windows on push and PR.
+* Build conda package on PR and merge into main.
 
 
