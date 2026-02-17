@@ -1,0 +1,34 @@
+package:
+  name: gregs_conda_package
+  version: "0.0.1"
+
+source:
+  path: ..
+
+build:
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python >=3.13
+    - pip
+    - setuptools
+    - wheel
+
+  run:
+    - python >=3.13
+
+test:
+  source_files:
+    - test/*
+  requires:
+    - pytest
+  commands:
+    - pytest -v
+
+
+about:
+  home: "https://github.com/gmcmacran/pip_package"
+  license: MIT
+  summary: "Building a basic conda module."

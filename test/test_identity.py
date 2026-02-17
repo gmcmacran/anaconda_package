@@ -1,4 +1,4 @@
-from gregs_pip_package.identity import identity
+from gregs_conda_package.identity import identity
 
 
 def test_identity_returns_same_value():

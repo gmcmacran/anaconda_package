@@ -3,7 +3,7 @@ requires = ["setuptools>=69.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gregs_pip_package"
+name = "gregs_conda_package"
 version = "0.0.1"
 description = "Building a basic pip module."
 readme = "README.md"
@@ -30,7 +30,7 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/gmcmacran/pip_package"
+Homepage = "https://github.com/gmcmacran/anaconda_package/tree/initial_upload"
 
 [tool.ruff]
 line-length = 88
